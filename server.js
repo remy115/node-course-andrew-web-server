@@ -46,6 +46,12 @@ app.get('/about',(req,resp)=>{
     });
 });
 
+app.get('/projects',(req,resp)=>{
+    resp.render('projects',{
+        pageTitle:'Projects Page33!'
+    });
+});
+
 app.get('/bad',(req,res)=>{
     res.send({
         errorMessage:'Errorrr com todos os RRRRR990'
